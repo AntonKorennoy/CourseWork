@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".fragments.SignUp">
+
+    <TextView
+            style="@style/big_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_registration_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="60dp" android:id="@+id/textView"/>
+
+    <EditText
+            android:id="@+id/field_login"
+            android:hint="@string/sign_up_field_login"
+            style="@style/edit_text"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="50dp"/>
+
+    <EditText
+            android:id="@+id/field_password"
+            android:hint="@string/sign_up_field_password"
+            style="@style/edit_text"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/field_login"
+            android:layout_marginTop="50dp"
+            app:layout_constraintHorizontal_bias="0.5"/>
+
+    <EditText
+            android:id="@+id/field_repeat_password"
+            android:hint="@string/sign_up_field_repeat_password"
+            style="@style/edit_text"
+            android:inputType="textPassword"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/field_password"
+            android:layout_marginTop="50dp"
+            app:layout_constraintHorizontal_bias="0.5"/>
+
+    <Button
+            android:id="@+id/button_reg"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:text="@string/sign_up_button_reg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@+id/field_repeat_password"
+            android:layout_marginTop="60dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

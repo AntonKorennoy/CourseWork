@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CourseWork</string>
+
+    <string name="sign_up_registration_text">Регистрация</string>
+    <string name="sign_up_button_reg">Зарегистрироваться</string>
+    <string name="sign_up_field_repeat_password">Повторите пароль</string>
+    <string name="sign_up_field_password">Введите пароль</string>
+    <string name="sign_up_field_login">Введите имя</string>
+
+    <string name="sign_in_text">Вход</string>
+
+    <string name="error_text">Ошибка входа</string>
+    <string name="news_text">Новости</string>
+</resources>
